@@ -5,21 +5,23 @@ const homeText = {
     heroListItem2: "Perfect ambiance",
     heroListItem3: "Impeccable service",
     heroListItem4: "Lasting memories",
-    quote: "'There is no better place to be for a dinner.'",
+    quote: "'There is no better place to be for dinner.'",
     critic: "- Food Critic",
     hours: "Hours",
-    hourListItem1: "Monday - 4pm-12am",
-    hourListItem2: "Tuesday - 4pm-12am",
-    hourListItem3: "Wednesday - 4pm-12am",
-    hourListItem4: "Thursday - 4pm-12am",
+    hourListItem1: "Monday - 4pm-11pm",
+    hourListItem2: "Tuesday - 4pm-11pm",
+    hourListItem3: "Wednesday - 4pm-11pm",
+    hourListItem4: "Thursday - 4pm-11pm",
     hourListItem5: "Friday - 4pm-12am",
     hourListItem6: "Saturday - 4pm-12am",
-    hourListItem7: "Sunday - 4pm-12am",
+    hourListItem7: "Sunday - 4pm-11pm",
     address: "123 Fancy Street Fake Town, State 12345"
 };
 
 const createHomeContent = () => {
     const content = document.querySelector("#content");
+    //clear content before adding new elements
+    content.replaceChildren();
 
     const title = document.createElement("h1");
     title.textContent = homeText.title;
@@ -59,6 +61,7 @@ const createHomeContent = () => {
         li.textContent = homeText["hourListItem" + i];
         hoursList.append(li);
     }
+    hours.append(hoursTitle);
     hours.append(hoursList);
 
     const addressContainer = document.createElement("div");

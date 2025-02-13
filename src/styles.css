@@ -3,6 +3,9 @@ body {
     font-size: 16px;
     background-color: darkslategray;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -18,6 +21,7 @@ header {
 
 #content {
     text-align: center;
+    flex: 1;
 }
 
 #content > p {
@@ -84,4 +88,14 @@ footer {
     color: #000000;
     padding: 5px 15px;
     text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    width: clamp(300px, 60%, 800px);
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 50px 0;
+    background-color: lightslategray;
 }
