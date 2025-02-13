@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: darkslategray;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    color: tomato;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+#content {
+    text-align: center;
+}
+
+#content > p {
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.hero {
+    margin-top: 25px;
+    background-image: url(../images/restaurant.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.hero ul {
+    padding: 15px;
+    margin: 0;
+}
+
+.hero li {
+    list-style: none;
+    margin: 40px;
+    font-size: 2rem;
+    color: tomato;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.quote-container {
+    background-color: #222222;
+    padding: 25px;
+}
+
+.quote {
+    font-size: 1.8rem;
+}
+
+.hours > p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hours ul {
+    padding: 15px;
+    margin: 0;
+}
+
+.hours li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.address-container {
+    background-color: #222222;
+    padding: 20px;
+}
+
+footer {
+    background-color: tomato;
+    color: #000000;
+    padding: 5px 15px;
+    text-align: center;
+}
