@@ -16,7 +16,20 @@ h1 {
 
 header {
     text-align: center;
-    padding: 15px;
+    padding: 15px 15px 0;
+    border-bottom: 2px solid #222222;
+}
+
+header button {
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-top: 2px solid #222222;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
 }
 
 #content {
@@ -37,13 +50,17 @@ header {
     justify-content: center;
 }
 
-.hero ul {
+ul {
     padding: 15px;
     margin: 0;
 }
 
-.hero li {
+li {
     list-style: none;
+    font-size: 1.2rem;
+}
+
+.hero li {
     margin: 40px;
     font-size: 2rem;
     color: tomato;
@@ -68,16 +85,6 @@ header {
     margin-bottom: 0;
 }
 
-.hours ul {
-    padding: 15px;
-    margin: 0;
-}
-
-.hours li {
-    list-style: none;
-    font-size: 1.2rem;
-}
-
 .address-container {
     background-color: #222222;
     padding: 20px;
@@ -90,12 +97,38 @@ footer {
     text-align: center;
 }
 
+.menu-container,
 .contact-container {
-    display: grid;
     width: clamp(300px, 60%, 800px);
     justify-self: center;
     border: 2px solid black;
     border-radius: 15px;
     margin: 50px 0;
     background-color: lightslategray;
+}
+
+.contact-container {
+    display: grid;
+}
+
+.menu-container {
+    padding: 20px;
+}
+
+.menu-container h2 {
+    color: #222222;
+}
+
+.menu-container li {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-container li p:first-of-type {
+    text-align: left;
+}
+
+.menu-container li p:last-of-type {
+    text-align: right;
 }
